@@ -1,0 +1,142 @@
+.top-header {
+    padding: 16px 0;
+    border-bottom: 1px solid $border;
+
+    .language,
+    .currency {
+        a {
+            color: $gray;
+            font-size: $fs-14;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+
+    .top-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                color: $gray;
+                font-size: $fs-14;
+                font-weight: 400;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.main-header {
+    padding: 28px 0;
+
+    .logo {
+        a {
+            display: inline-block;
+            color: $black;
+            font-size: 25px;
+            font-weight: 700;
+            font-family: $font-family;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+    }
+
+    .search-box {
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 46px;
+            border: 1px solid $border;
+            border-radius: 30px;
+            padding: 0 50px 0 20px;
+            outline: none;
+            font-size: $fs-14;
+            color: $black;
+            background: $white;
+            box-shadow: none;
+
+            &::placeholder {
+                color: $gray;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            right: 18px;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .navbar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                color: $black;
+                font-size: $fs-16;
+                font-weight: 500;
+                text-decoration: none;
+
+                img {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+
+    .header-icons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+
+        a {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 22px;
+                height: 22px;
+                display: block;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 991px) {
+
+    .top-header {
+        display: none !important;
+    }
+
+    .main-header {
+        padding: 16px 0;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+}

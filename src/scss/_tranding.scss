@@ -1,0 +1,16 @@
+.trending-section .card {
+    height: 100%;
+}
+
+.trending-section .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.trending-section .position-relative {
+    height: 350px; // Small cards
+    overflow: hidden;
+    border-radius: 24px;
+}

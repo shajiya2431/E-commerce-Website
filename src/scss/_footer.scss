@@ -1,0 +1,147 @@
+.footer-section {
+    background: $black;
+    padding: 80px 0;
+}
+
+// =========================
+// Logo
+// =========================
+
+.footer-logo {
+    color: $white;
+    font-size: $fs-36;
+    font-weight: 700;
+    font-family: $font-family;
+    display: inline-block;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+// =========================
+// Text
+// =========================
+
+.footer-text {
+    color: $gray;
+    font-size: $fs-14;
+    line-height: 28px;
+    max-width: 290px;
+    margin-bottom: 40px;
+}
+
+// =========================
+// Subscribe
+// =========================
+
+.subscribe-box {
+    max-width: 430px;
+
+    input {
+        height: 48px;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, .18);
+        color: $white;
+        box-shadow: none;
+        padding: 0 20px;
+
+        &::placeholder {
+            color: $gray;
+        }
+
+        &:focus {
+            background: transparent;
+            color: $white;
+            border-color: rgba(255, 255, 255, .35);
+            box-shadow: none;
+        }
+    }
+
+    button {
+        height: 48px;
+        min-width: 90px;
+        border: 0;
+        background: $white;
+        color: $black;
+        font-size: $fs-14;
+        font-weight: 600;
+
+        &:hover {
+            background: $white;
+            color: $black;
+        }
+    }
+}
+
+// =========================
+// Titles
+// =========================
+
+.footer-title {
+    color: $white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+// =========================
+// Menu
+// =========================
+
+.footer-menu {
+
+    li {
+        margin-bottom: 14px;
+    }
+
+    a {
+        color: $gray;
+        text-decoration: none;
+        font-size: $fs-14;
+        transition: .3s;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+// =========================
+// Responsive
+// =========================
+
+@media (max-width:991.98px) {
+
+    .footer-section {
+        padding: 60px 0;
+    }
+
+    .footer-text {
+        max-width: 100%;
+    }
+
+    .subscribe-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:575.98px) {
+
+    .footer-section {
+        padding: 50px 0;
+    }
+
+    .footer-logo {
+        font-size: 30px;
+    }
+
+    .footer-title {
+        margin-top: 10px;
+    }
+
+    .footer-menu li {
+        margin-bottom: 10px;
+    }
+}
