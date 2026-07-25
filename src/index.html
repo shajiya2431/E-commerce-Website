@@ -489,88 +489,135 @@
 
     </section>
 
-    <section class="trending-section py-5">
+    <!--=========================
+Trending Section
+==========================-->
+
+    <section class="trending py-4">
 
         <div class="container">
 
-            <!-- Heading + Filter -->
-            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+            <!-- Heading -->
 
-                <h2 class="fs-3 fw-medium mb-0">
-                    Trending
-                </h2>
-                <ul class="nav nav-pills gap-2" id="productTabs">
+            <div class="row align-items-center mb-5">
 
-                    <li class="nav-item">
-                        <button class="nav-link active rounded-pill" data-bs-toggle="pill" data-bs-target="#shoes"
-                            type="button">
-                            SHOES
-                        </button>
-                    </li>
+                <div class="col-lg-4">
 
-                    <li class="nav-item">
-                        <button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#hat" type="button">
-                            HAT
-                        </button>
-                    </li>
+                    <h2 class="display-5 fw-light mb-4 mb-lg-0">
+                        Trending
+                    </h2>
 
-                    <li class="nav-item">
-                        <button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#jackets"
-                            type="button">
-                            JACKETS
-                        </button>
-                    </li>
+                </div>
 
-                    <li class="nav-item">
-                        <button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#shorts"
-                            type="button">
-                            SHORTS
-                        </button>
-                    </li>
+                <div class="col-lg-8">
 
-                    <li class="nav-item">
-                        <button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#tshirt"
-                            type="button">
-                            T-SHIRT
-                        </button>
-                    </li>
+                    <ul class="nav nav-pills justify-content-lg-end justify-content-center flex-wrap gap-2"
+                        id="productTab" role="tablist">
 
-                </ul>
+                        <li class="nav-item" role="presentation">
 
+                            <button class="nav-link active rounded-pill px-4 py-2" id="shoes-tab" data-bs-toggle="pill"
+                                data-bs-target="#shoes" type="button">
 
+                                Shoes
+
+                            </button>
+
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+
+                            <button class="nav-link rounded-pill px-4 py-2" id="hat-tab" data-bs-toggle="pill"
+                                data-bs-target="#hat" type="button">
+
+                                Hat
+
+                            </button>
+
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+
+                            <button class="nav-link rounded-pill px-4 py-2" id="jacket-tab" data-bs-toggle="pill"
+                                data-bs-target="#jacket" type="button">
+
+                                Jackets
+
+                            </button>
+
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+
+                            <button class="nav-link rounded-pill px-4 py-2" id="tshirt-tab" data-bs-toggle="pill"
+                                data-bs-target="#tshirt" type="button">
+
+                                T-Shirt
+
+                            </button>
+
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+
+                            <button class="nav-link rounded-pill px-4 py-2" id="shorts-tab" data-bs-toggle="pill"
+                                data-bs-target="#shorts" type="button">
+
+                                Shorts
+
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
-            <div class="tab-content mt-4">
+            <!-- Tab Content -->
 
-                <div class="tab-pane fade show active" id="shoes">
+            <div class="tab-content">
+
+                <!--=========================
+            Shoes
+            ==========================-->
+
+                <div class="tab-pane fade show active" id="shoes" role="tabpanel">
 
                     <div class="row g-4">
 
-                        <!-- Card 1 -->
-                        <div class="col-lg-3 col-md-6">
+                        <!-- Product 1 -->
 
-                            <div class="card border-0">
+                        <div class="col-6 col-lg-3 order-1">
 
-                                <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="card border-0 bg-transparent h-100">
 
-                                    <img src="./assets/images/Casual Shoe.png" class="img-fluid w-100" alt="">
+                                <div class="position-relative">
 
-                                    <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2">
-                                        <img src="./assets/icons/red-heart.svg" alt="">
+                                    <img src="./assets/images/Casual Shoe.png"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="">
+
+                                    <button
+                                        class="btn heart-btn red rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg">
+
                                     </button>
+
+
 
                                 </div>
 
-                                <div class="mt-3">
+                                <div class="card-body px-0">
 
-                                    <h5 class="fw-semibold mb-1">
+                                    <h5 class="fw-medium mb-1">
                                         Casual Shoe
                                     </h5>
 
-                                    <h6 class="text-dark fw-medium mb-0">
+                                    <p class="text-secondary mb-0">
                                         $225
-                                    </h6>
+                                    </p>
 
                                 </div>
 
@@ -578,30 +625,35 @@
 
                         </div>
 
-                        <!-- Card 2 -->
-                        <div class="col-lg-3 col-md-6">
+                        <!-- Product 2 -->
 
-                            <div class="card border-0">
+                        <div class="col-6 col-lg-3 order-2">
 
-                                <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="card border-0 bg-transparent h-100">
 
-                                    <img src="./assets/images/kateboard Shoe.png" class="img-fluid w-100" alt="">
+                                <div class="position-relative">
 
-                                    <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2">
-                                        <img src="./assets/icons/red-heart.svg" alt="">
+                                    <img src="./assets/images/kateboard Shoe.png"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
                                     </button>
 
                                 </div>
 
-                                <div class="mt-3">
+                                <div class="card-body px-0">
 
-                                    <h5 class="fw-semibold mb-1">
+                                    <h5 class="fw-medium mb-1">
                                         Skateboard Shoe
                                     </h5>
 
-                                    <h6 class="text-dark fw-medium mb-0">
+                                    <p class="text-secondary mb-0">
                                         $125
-                                    </h6>
+                                    </p>
 
                                 </div>
 
@@ -609,30 +661,69 @@
 
                         </div>
 
-                        <!-- Card 3 -->
-                        <div class="col-lg-6 col-md-12">
+                        <!-- Product 3 -->
 
-                            <div class="card border-0">
+                        <div class="col-12 col-lg-6 order-3">
 
-                                <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="card border-0 bg-transparent h-100">
 
-                                    <img src="./assets/images/red-shoes.png" class="img-fluid w-100" alt="">
+                                <div class="position-relative">
 
-                                    <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2">
-                                        <img src="./assets/icons/red-heart.svg" alt="">
+                                    <img src="./assets/images/red-shoes.png"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Skateboard Shoe
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $125
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product 4 -->
+
+                        <div class="col-12 col-lg-6 order-6 order-lg-4">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/Shoes.png"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="Basket Shoe">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
                                     </button>
 
                                 </div>
 
-                                <div class="mt-3">
+                                <div class="card-body px-0">
 
-                                    <h5 class="fw-semibold mb-1">
-                                        Red Jordan Shoe
+                                    <h5 class="fw-medium mb-1">
+                                        Skateboard Shoe
                                     </h5>
 
-                                    <h6 class="text-dark fw-medium mb-0">
-                                        $185
-                                    </h6>
+                                    <p class="text-secondary mb-0">
+                                        $125
+                                    </p>
 
                                 </div>
 
@@ -640,102 +731,35 @@
 
                         </div>
 
+                        <!-- Product 5 -->
 
+                        <div class="col-6 col-lg-3 order-4 order-lg-5">
 
-                        <div class="row g-4 mt-2">
+                            <div class="card border-0 bg-transparent h-100">
 
-                            <!-- Big Card -->
-                            <div class="col-lg-6 col-md-12">
+                                <div class="position-relative">
 
-                                <div class="card border-0">
+                                    <img src="./assets/images/Basket Shoes.png"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Canvas Shoe">
 
-                                    <div class="position-relative rounded-4 overflow-hidden">
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
 
-                                        <img src="./assets/images/Shoes.png" class="img-fluid w-100" alt="">
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
 
-                                        <button
-                                            class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2">
-                                            <img src="./assets/icons/red-heart.svg" alt="">
-                                        </button>
-
-
-                                    </div>
-
-                                    <div class="mt-3">
-
-                                        <h5 class="fw-semibold mb-1">
-                                            Skateboard Shoe
-                                        </h5>
-
-                                        <p class="mb-0 fw-medium">
-                                            $125
-                                        </p>
-
-                                    </div>
+                                    </button>
 
                                 </div>
 
-                            </div>
+                                <div class="card-body px-0">
 
-                            <!-- Basket Shoe -->
-                            <div class="col-lg-3 col-md-6">
+                                    <h5 class="fw-medium mb-1">
+                                        Basket Shoe
+                                    </h5>
 
-                                <div class="card border-0">
-
-                                    <div class="position-relative rounded-4 overflow-hidden">
-
-                                        <img src="./assets/images/Basket Shoes.png" class="img-fluid w-100" alt="">
-
-                                        <button
-                                            class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2">
-                                            <img src="./assets/icons/red-heart.svg" alt="">
-                                        </button>
-
-                                    </div>
-
-                                    <div class="mt-3">
-
-                                        <h5 class="fw-semibold mb-1">
-                                            Basket Shoe
-                                        </h5>
-
-                                        <p class="mb-0 fw-medium">
-                                            $140
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Sportwear Shoe -->
-                            <div class="col-lg-3 col-md-6">
-
-                                <div class="card border-0">
-
-                                    <div class="position-relative rounded-4 overflow-hidden">
-
-                                        <img src="./assets/images/Sportwear-Shoes.png" class="img-fluid w-100" alt="">
-
-                                        <button
-                                            class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2">
-                                            <img src="./assets/icons/red-heart.svg" alt="">
-                                        </button>
-
-                                    </div>
-
-                                    <div class="mt-3">
-
-                                        <h5 class="fw-semibold mb-1">
-                                            Sportwear Shoe
-                                        </h5>
-
-                                        <p class="mb-0 fw-medium">
-                                            $170
-                                        </p>
-
-                                    </div>
+                                    <p class="text-secondary mb-0">
+                                        $125
+                                    </p>
 
                                 </div>
 
@@ -743,45 +767,178 @@
 
                         </div>
 
-                        <div class="row mt-5">
-                            <div class="col-12">
-                                <div class="border-bottom"></div>
+                        <!-- Product 6 -->
+
+                        <div class="col-6 col-lg-3 order-5 order-lg-6">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/Sportwear-Shoes.png"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Classic Shoe">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Sportwear Shoe
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $159
+                                    </p>
+
+                                </div>
+
                             </div>
+
                         </div>
 
                     </div>
+
                 </div>
 
-                <!-- ================= HAT ================= -->
 
-                <div class="tab-pane fade" id="hat">
+
+                <!--=========================
+Hat Products
+==========================-->
+
+                <div class="tab-pane fade" id="hat" role="tabpanel" aria-labelledby="hat-tab">
 
                     <div class="row g-4">
 
-                        <!-- Hat 1 -->
-                        <div class="col-lg-3 col-md-6">
+                        <!-- Product 1 -->
 
-                            <div class="card border-0">
+                        <div class="col-6 col-lg-3 order-1">
 
-                                <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="card border-0 bg-transparent h-100">
 
-                                    <img src="./assets/images/hat-white.png" class="img-fluid w-100" alt="Hat">
+                                <div class="position-relative">
+
+                                    <img src="/assets/images/black-hat-image.png"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Hat">
 
                                     <button
-                                        class="btn btn-danger rounded-circle position-absolute top-0 end-0 m-3 p-2 border-0">
-                                        <img src="./assets/icons/heart-white.svg" alt="">
+                                        class="btn heart-btn red rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg">
+
                                     </button>
 
                                 </div>
 
-                                <div class="pt-3">
+                                <div class="card-body px-0">
 
-                                    <h5 class="fw-semibold mb-1">
+                                    <h5 class="fw-medium mb-1">Summer Hat</h5>
+
+                                    <p class="text-secondary mb-0">$65</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 2 -->
+
+                        <div class="col-6 col-lg-3 order-2">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/hat-white.png"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Hat">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">Casual Hat</h5>
+
+                                    <p class="text-secondary mb-0">$72</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 3 -->
+
+                        <div class="col-12 col-lg-6 order-3">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/two-hat.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="Hat">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">Fashion Hat</h5>
+
+                                    <p class="text-secondary mb-0">$95</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product 4 -->
+
+                        <div class="col-12 col-lg-6 order-6 order-lg-4">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/white-hat.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="Hat">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
                                         Classic Hat
                                     </h5>
 
-                                    <p class="mb-0 fw-medium">
-                                        $65
+                                    <p class="text-secondary mb-0">
+                                        $88
                                     </p>
 
                                 </div>
@@ -790,30 +947,34 @@
 
                         </div>
 
-                        <!-- Hat 2 -->
-                        <div class="col-lg-3 col-md-6">
+                        <!-- Product 5 -->
 
-                            <div class="card border-0">
+                        <div class="col-6 col-lg-3 order-4 order-lg-5">
 
-                                <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="card border-0 bg-transparent h-100">
 
-                                    <img src="./assets/images/black-hat-image.png" class="img-fluid w-100" alt="Hat">
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/brown.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Hat">
 
                                     <button
-                                        class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 border-0">
-                                        <img src="./assets/icons/red-heart.svg" alt="">
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
                                     </button>
 
                                 </div>
 
-                                <div class="pt-3">
+                                <div class="card-body px-0">
 
-                                    <h5 class="fw-semibold mb-1">
-                                        Street Hat
+                                    <h5 class="fw-medium mb-1">
+                                        Beach Hat
                                     </h5>
 
-                                    <p class="mb-0 fw-medium">
-                                        $75
+                                    <p class="text-secondary mb-0">
+                                        $59
                                     </p>
 
                                 </div>
@@ -822,98 +983,32 @@
 
                         </div>
 
-                        <!-- Hat 3 -->
-                        <div class="col-lg-6">
+                        <!-- Product 6 -->
 
-                            <div class="card border-0">
+                        <div class="col-6 col-lg-3 order-5 order-lg-6">
 
-                                <div class="position-relative rounded-4 overflow-hidden">
+                            <div class="card border-0 bg-transparent h-100">
 
-                                    <img src="./assets/images/black-hat.jpg" class="img-fluid w-100" alt="Hat">
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/two-images.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Hat">
 
                                     <button
-                                        class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 border-0">
-                                        <img src="./assets/icons/red-heart.svg" alt="">
-                                    </button>
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
 
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
                                 </div>
 
-                                <div class="pt-3">
+                                <div class="card-body px-0">
 
-                                    <h5 class="fw-semibold mb-1">
+                                    <h5 class="fw-medium mb-1">
                                         Premium Hat
                                     </h5>
 
-                                    <p class="mb-0 fw-medium">
-                                        $120
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Bottom Row -->
-                    <div class="row g-4 mt-2">
-
-                        <!-- Big Hat -->
-                        <div class="col-lg-6">
-
-                            <div class="card border-0">
-
-                                <div class="position-relative rounded-4 overflow-hidden">
-
-                                    <img src="./assets/images/two-hat.jpg" class="img-fluid w-100" alt="Hat">
-
-                                    <button
-                                        class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 border-0">
-                                        <img src="./assets/icons/red-heart.svg" alt="">
-                                    </button>
-
-                                </div>
-
-                                <div class="pt-3">
-
-                                    <h5 class="fw-semibold mb-1">
-                                        Fashion Hat
-                                    </h5>
-
-                                    <p class="mb-0 fw-medium">
-                                        $130
-                                    </p>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <!-- Hat 5 -->
-                        <div class="col-lg-3 col-md-6">
-
-                            <div class="card border-0">
-
-                                <div class="position-relative rounded-4 overflow-hidden">
-
-                                    <img src="./assets/images/two-images.jpg" class="img-fluid w-100" alt="Hat">
-
-                                    <button
-                                        class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 border-0">
-                                        <img src="./assets/icons/red-heart.svg" alt="">
-                                    </button>
-
-                                </div>
-
-                                <div class="pt-3">
-
-                                    <h5 class="fw-semibold mb-1">
-                                        Casual Hat
-                                    </h5>
-
-                                    <p class="mb-0 fw-medium">
+                                    <p class="text-secondary mb-0">
                                         $80
                                     </p>
 
@@ -923,30 +1018,224 @@
 
                         </div>
 
-                        <!-- Hat 6 -->
-                        <div class="col-lg-3 col-md-6">
+                    </div>
 
-                            <div class="card border-0">
+                </div>
 
-                                <div class="position-relative rounded-4 overflow-hidden">
 
-                                    <img src="./assets/images/hat-image.jpg" class="img-fluid w-100" alt="Hat">
+                <!--=========================
+Jackets Products
+==========================-->
+
+                <div class="tab-pane fade" id="jacket" role="tabpanel" aria-labelledby="jacket-tab">
+
+                    <div class="row g-4">
+
+                        <!-- Product 1 -->
+
+                        <div class="col-6 col-lg-3 order-1">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/white-jacket.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Leather Jacket">
 
                                     <button
-                                        class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 p-2 border-0">
-                                        <img src="./assets/icons/red-heart.svg" alt="">
+                                        class="btn heart-btn red rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg">
+
+                                    </button>
+
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Leather Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $180
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 2 -->
+
+                        <div class="col-6 col-lg-3 order-2">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/black-jacket.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Denim Jacket">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
                                     </button>
 
                                 </div>
 
-                                <div class="pt-3">
+                                <div class="card-body px-0">
 
-                                    <h5 class="fw-semibold mb-1">
-                                        Modern Hat
+                                    <h5 class="fw-medium mb-1">
+                                        Denim Jacket
                                     </h5>
 
-                                    <p class="mb-0 fw-medium">
-                                        $90
+                                    <p class="text-secondary mb-0">
+                                        $155
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 3 -->
+
+                        <div class="col-12 col-lg-6 order-3">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/girls-jacket.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="Winter Jacket">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Winter Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $225
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product 4 -->
+
+                        <div class="col-12 col-lg-6 order-6 order-lg-4">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/mens-jacket.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="Bomber Jacket">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Bomber Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $195
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 5 -->
+
+                        <div class="col-6 col-lg-3 order-4 order-lg-5">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/Aesthetic-jacket.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Casual Jacket">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Casual Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $145
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 6 -->
+
+                        <div class="col-6 col-lg-3 order-5 order-lg-6">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/brown-jacket.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Hoodie Jacket">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Hoodie Jacket
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $170
                                     </p>
 
                                 </div>
@@ -958,9 +1247,838 @@
                     </div>
 
                 </div>
+
+
+                <!--=========================
+T-Shirt Products
+==========================-->
+
+                <div class="tab-pane fade" id="tshirt" role="tabpanel" aria-labelledby="tshirt-tab">
+
+                    <div class="row g-4">
+
+                        <!-- Product 1 -->
+
+                        <div class="col-6 col-lg-3 order-1">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/white-t-shirt.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Basic T-Shirt">
+
+                                    <button
+                                        class="btn heart-btn red rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Basic T-Shirt
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $45
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 2 -->
+
+                        <div class="col-6 col-lg-3 order-2">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/stylish-t-shirt.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm"
+                                        alt="Printed T-Shirt">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Printed T-Shirt
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $55
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 3 -->
+
+                        <div class="col-12 col-lg-6 order-3">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/t-shirt-imag.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg"
+                                        alt="Oversized T-Shirt">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Oversized T-Shirt
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $69
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product 4 -->
+
+                        <div class="col-12 col-lg-6 order-6 order-lg-4">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/add-t-shirt.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="Polo T-Shirt">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Polo T-Shirt
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $75
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 5 -->
+
+                        <div class="col-6 col-lg-3 order-4 order-lg-5">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/line-t-shirt.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Cotton T-Shirt">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Cotton T-Shirt
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $49
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 6 -->
+
+                        <div class="col-6 col-lg-3 order-5 order-lg-6">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/black-t-shirt.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm"
+                                        alt="Graphic T-Shirt">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Graphic T-Shirt
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $62
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--=========================
+Shorts Products
+==========================-->
+
+                <div class="tab-pane fade" id="shorts" role="tabpanel" aria-labelledby="shorts-tab">
+
+                    <div class="row g-4">
+
+                        <!-- Product 1 -->
+
+                        <div class="col-6 col-lg-3 order-1">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/black-shorts.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Casual Shorts">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Casual Shorts
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $45
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 2 -->
+
+                        <div class="col-6 col-lg-3 order-2">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/brown-shorts.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Denim Shorts">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Denim Shorts
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $58
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 3 -->
+
+                        <div class="col-12 col-lg-6 order-3">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/shorts.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="Sport Shorts">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Sport Shorts
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $75
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Product 4 -->
+
+                        <div class="col-12 col-lg-6 order-6 order-lg-4">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/green-shorts.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-lg" alt="Cotton Shorts">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Cotton Shorts
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $68
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 5 -->
+
+                        <div class="col-6 col-lg-3 order-4 order-lg-5">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/red-shorts.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Beach Shorts">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg" alt="heart">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Beach Shorts
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $49
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Product 6 -->
+
+                        <div class="col-6 col-lg-3 order-5 order-lg-6">
+
+                            <div class="card border-0 bg-transparent h-100">
+
+                                <div class="position-relative">
+
+                                    <img src="./assets/images/shorts-images.jpg"
+                                        class="card-img-top rounded-5 object-fit-cover product-sm" alt="Premium Shorts">
+
+                                    <button
+                                        class="btn heart-btn rounded-circle shadow-sm position-absolute top-0 end-0 m-3 p-2">
+
+                                        <img src="./assets/icons/red-heart.svg">
+
+                                    </button>
+
+                                </div>
+
+                                <div class="card-body px-0">
+
+                                    <h5 class="fw-medium mb-1">
+                                        Premium Shorts
+                                    </h5>
+
+                                    <p class="text-secondary mb-0">
+                                        $62
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- End Tab Content -->
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="explore-color py-5">
+        <div class="container">
+
+            <div class="row align-items-start g-4">
+
+                <!-- Left Heading -->
+                <div class="col-lg-3 col-md-12">
+
+                    <h2 class="display-5 fw-light lh-1 mb-0">
+                        Explore <br>
+                        by Colors
+                    </h2>
+
+                </div>
+
+                <!-- Right Colors -->
+                <!-- Right Colors -->
+                <div class="col-lg-9 col-md-12">
+
+                    <div class="row g-2 g-lg-3">
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color red"></span>
+                                <span>RED PASTEL</span>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color green"></span>
+                                <span>LIME GREEN</span>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color navy"></span>
+                                <span>NAVY BLUE</span>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color white"></span>
+                                <span>CLEAN WHITE</span>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color sky"></span>
+                                <span>BLUE SKY</span>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color purple"></span>
+                                <span>PURPLE</span>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color pink"></span>
+                                <span>PINK</span>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color yellow"></span>
+                                <span>YELLOW</span>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-lg-auto">
+                            <a href="#" class="color-btn w-100">
+                                <span class="color darkgreen"></span>
+                                <span>DARK GREEN</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
     </section>
 
+    <section class="container my-5">
+
+        <div class="swiper reviewSwiper rounded-5">
+
+            <div class="swiper-wrapper">
+
+                <!--=========================
+            Slide 1
+            ==========================-->
+
+                <div class="swiper-slide">
+
+                    <div class="review-banner">
+
+                        <div class="container h-100">
+
+                            <div class="row h-100 align-items-center">
+
+                                <div class="col-12 col-lg-5">
+
+                                    <div class="review-content text-white">
+
+                                        <small class="d-block mb-3">
+                                            What people said
+                                        </small>
+
+                                        <h2>
+                                            Love the way they handle the order.
+                                        </h2>
+
+                                        <p>
+                                            Very professional and friendly at the same
+                                            time. They packed the order on schedule
+                                            and the detail of their wrapping is top
+                                            notch. One of my best experiences buying
+                                            online items.
+                                        </p>
+
+                                        <div class="d-flex align-items-center gap-3">
+
+                                            <!-- Mobile Only -->
+                                            <img src="./assets/icons/profie.svg" class="profile-img d-block d-md-none"
+                                                alt="Profile">
+
+                                            <div>
+
+                                                <h5 class="mb-1">
+                                                    Samantha William
+                                                </h5>
+
+                                                <small>
+                                                    Fashion Enthusiast
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-7"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--=========================
+            Slide 2
+            ==========================-->
+
+                <div class="swiper-slide">
+
+                    <div class="review-banner">
+
+                        <div class="container h-100">
+
+                            <div class="row h-100 align-items-center">
+
+                                <div class="col-12 col-lg-5">
+
+                                    <div class="review-content text-white">
+
+                                        <small class="d-block mb-3">
+                                            What people said
+                                        </small>
+
+                                        <h2>
+                                            Love the way they handle the order.
+                                        </h2>
+
+                                        <p>
+                                            Very professional and friendly at the same time.
+                                            They packed the order on schedule and the detail
+                                            of their wrapping is top notch. One of my best experience for buying online
+                                            items. Surely will come back for another purchase.
+                                        </p>
+
+                                        <div class="d-flex align-items-center gap-3">
+
+                                            <!-- Mobile Only -->
+                                            <img src="./assets/icons/profie.svg" class="profile-img d-block d-md-none"
+                                                alt="Profile">
+
+                                            <div>
+
+                                                <h5 class="mb-1">
+                                                    Samantha William
+                                                </h5>
+
+                                                <small>
+                                                    Fashion Enthusiast
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-7"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-5">
+
+        <!-- Full Width Thin Line -->
+        <div class="section-divider"></div>
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="row mb-5">
+                <div class="col-lg-5">
+                    <h2 class="display-6 fw-normal lh-sm mb-0">
+                        Why you'll love to <br>
+                        shop on our website
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="row g-5">
+
+                <!-- Feature 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-box">
+
+                        <div class="rounded-circle bg-black d-flex align-items-center justify-content-center mb-4"
+                            style="width:70px;height:70px;">
+                            <img src="assets/icons/white-heart.svg" alt="" class="img-fluid">
+                        </div>
+
+                        <h4 class="fs-4 fw-medium mb-3">Take care with love</h4>
+
+                        <p class="text-secondary small mb-0">
+                            We take care your package with full of attention and of
+                            course full of love. We want to make sure you'll receive
+                            your package like you receive your birthday gift.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-box">
+
+                        <div class="rounded-circle bg-black d-flex align-items-center justify-content-center mb-4"
+                            style="width:70px;height:70px;">
+                            <img src="assets/icons/phone-icons.svg" alt="" class="img-fluid">
+                        </div>
+
+                        <h4 class="fs-4 fw-medium mb-3">Friendly Customer Service</h4>
+
+                        <p class="text-secondary small mb-0">
+                            You do not need to worry when you want to check your
+                            package. We will always answer whatever your questions.
+                            Just click on the chat icon and we will talk.
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="feature-box">
+
+                        <div class="rounded-circle bg-black d-flex align-items-center justify-content-center mb-4"
+                            style="width:70px;height:70px;">
+                            <img src="assets/icons/refres-icons.svg" alt="" class="img-fluid">
+                        </div>
+
+                        <h4 class="fs-4 fw-medium mb-3">Refund Process</h4>
+
+                        <p class="text-secondary small mb-0">
+                            Refund is a such bad experience and we don't want that
+                            thing happen to you. But when it's happen we will make
+                            sure you will through smooth and friendly process.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="blog-section py-5">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-5 fw-normal mb-4">
+                        From The Blog
+                    </h2>
+                </div>
+            </div>
+
+            <!-- Blog -->
+            <div class="row align-items-center g-4">
+
+                <!-- Left Image -->
+                <div class="col-lg-6">
+
+                    <img src="assets/images/blog-image.png" class="img-fluid w-100 rounded-5" alt="Blog Image">
+
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-6">
+
+                    <h3 class="display-4 fw-normal lh-1 mb-4">
+                        How to combine your daily outfit to
+                        looks fresh and cool.
+                    </h3>
+
+                    <p class="text-secondary mb-4">
+                        Maybe you don't need to buy new clothes to have nice,
+                        cool, fresh looking outfit everyday. Maybe what you
+                        need is to combine your clothes collections. Mix and
+                        match is the key.
+                    </p>
+
+                    <a href="#" class="btn btn-outline-dark rounded-pill px-4 py-2 text-uppercase small">
+                        Read More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
     <footer class="footer-section py-5">
 
         <div class="container">
